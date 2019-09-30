@@ -1,4 +1,4 @@
-package tugas2_152101;
+package tugas2_162101;
 import java.util.Scanner;
 
 public class Biodata 
