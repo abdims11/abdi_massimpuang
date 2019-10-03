@@ -1,7 +1,7 @@
 package tugas2_162101;
 import java.util.Scanner;
 
-public class Biodata 
+public class tugas2_162101 
 {
     public static void main(String[] args) 
     {
