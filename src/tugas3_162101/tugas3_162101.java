@@ -55,10 +55,10 @@ public class tugas3_162101
         {
             int c = j + a;
             System.out.println("Data Mahasiswa ke-" + c);
-            System.out.println(nim[j]);
-            System.out.println(nama[j]);
-            System.out.println(umur[j]);
-            System.out.println(parodi[j]);
+            System.out.println("NIM \t: " + nim[j]);
+            System.out.println("NAMA \t: " + nama[j]);
+            System.out.println("PARODI \t: " + parodi[j]);
+            System.out.println("UMUR \t: " + umur[j] + "TAHUN");
             System.out.println("");
         } 
         
