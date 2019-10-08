@@ -33,7 +33,7 @@ public class tugas3_162101
             }
             else if(nim[i].charAt(2) == '2')
             {
-                parodi[1] = "Teknik Informatika";
+                parodi[i] = "Teknik Informatika";
             }
             else if (nim[i].charAt(2) == '3')
             {
@@ -51,29 +51,16 @@ public class tugas3_162101
             System.out.println("");
         }
         
-//        for(int j = 0 ; j < nama.length; j++)
-//        {
-//            int c = j + a;
-//            System.out.println("Data Mahasiswa ke-" + c);
-//            System.out.println(nim[j]);
-//            System.out.println(nama[j]);
-//            System.out.println(umur[j]);
-//            System.out.println(parodi[j]);
-//            System.out.println("");
-//        }   
-            System.out.println("Data Mahasiswa ke-" + 1);
-            System.out.println(nim[0]);
-            System.out.println(nama[0]);
-            System.out.println(umur[0]);
-            System.out.println(parodi[0]);
+        for(int j = 0 ; j < nama.length; j++)
+        {
+            int c = j + a;
+            System.out.println("Data Mahasiswa ke-" + c);
+            System.out.println(nim[j]);
+            System.out.println(nama[j]);
+            System.out.println(umur[j]);
+            System.out.println(parodi[j]);
             System.out.println("");
-            
-             System.out.println("Data Mahasiswa ke-" + 1);
-            System.out.println(nim[1]);
-            System.out.println(nama[1]);
-            System.out.println(umur[1]);
-            System.out.println(parodi[1]);
-            System.out.println("");
+        } 
         
     }
 }
