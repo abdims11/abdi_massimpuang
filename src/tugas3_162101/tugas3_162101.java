@@ -51,7 +51,7 @@ public class tugas3_162101
             System.out.println("");
         }
         
-        for(int j = 0 ; j < nama.length; j++)
+        for(int j = 0 ; j <= nama.length; j++)
         {
             int c = j + a;
             System.out.println("Data Mahasiswa ke-" + c);
