@@ -11,6 +11,7 @@ public class tugas3_162101
         String[] nim = new String[4];
         String[] nama = new String[4];
         String[] umur = new String[4];
+        String[] parodi = new String[4];
         
         //Character jawab = new Character('Y');
         //Character jawaban = new Character('Y');
@@ -26,6 +27,22 @@ public class tugas3_162101
             System.out.print("Masukkan Umur \t: ");
             umur[i] = input.nextLine();
             
+            if (nim[i].charAt(2) == '1') 
+            {
+                parodi[i] = "Sistem Informasi";
+            }
+            else if(nim[i].charAt(2) == '2')
+            {
+                parodi[1] = "Teknik Informatika";
+            }
+            else if (nim[i].charAt(2) == '3')
+            {
+                parodi[i] = "Manajemen Informatika";
+            }
+            else
+            {
+                parodi[i] = "parodi tidak terdaftar";
+            }
             
             System.out.print("Masih Ingin menginput data [Y/N]");
             jawaban = input.nextLine().charAt(0);
@@ -34,16 +51,29 @@ public class tugas3_162101
             System.out.println("");
         }
         
-        for(int j = 0 ; j < nama.length; j++)
-        {
-            int c = j + a;
-            System.out.println("Data Mahasiswa ke-" + c);
-            System.out.println(nim[j]);
-            System.out.println(nama[j]);
-            System.out.println(umur[j]);
+//        for(int j = 0 ; j < nama.length; j++)
+//        {
+//            int c = j + a;
+//            System.out.println("Data Mahasiswa ke-" + c);
+//            System.out.println(nim[j]);
+//            System.out.println(nama[j]);
+//            System.out.println(umur[j]);
+//            System.out.println(parodi[j]);
+//            System.out.println("");
+//        }   
+            System.out.println("Data Mahasiswa ke-" + 1);
+            System.out.println(nim[0]);
+            System.out.println(nama[0]);
+            System.out.println(umur[0]);
+            System.out.println(parodi[0]);
             System.out.println("");
-        }   
-        
+            
+             System.out.println("Data Mahasiswa ke-" + 1);
+            System.out.println(nim[1]);
+            System.out.println(nama[1]);
+            System.out.println(umur[1]);
+            System.out.println(parodi[1]);
+            System.out.println("");
         
     }
 }
