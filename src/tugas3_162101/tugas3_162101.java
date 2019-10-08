@@ -58,7 +58,7 @@ public class tugas3_162101
             System.out.println("NIM \t: " + nim[j]);
             System.out.println("NAMA \t: " + nama[j]);
             System.out.println("PARODI \t: " + parodi[j]);
-            System.out.println("UMUR \t: " + umur[j] + "TAHUN");
+            System.out.println("UMUR \t: " + umur[j] + " TAHUN");
             System.out.println("");
         } 
         
