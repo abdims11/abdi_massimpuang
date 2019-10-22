@@ -34,20 +34,18 @@ public class tugas4_162101 extends JApplet{
             Graphics2D g2= (Graphics2D) g;
             g.setColor(Color.CYAN); //langit
             
-            //========== mobil
+            //mobil
             g.setColor(Color.gray);
             g.fillRect(205,305,100,30 ); //badan bawah
             g.fillOval(207,278,104,45); //badan atas
             
-            g.setColor(Color.blue);
+            g.setColor(Color.yellow);
             g.fillRect(210,305,100,30 ); //badan bawah
             g.fillOval(210,280,100,45); //badan atas
             g.fillArc (180,298,60,70,0,180);// atas ban
-            g.fillArc (285,298,60,70,0,180);// atas ban
-            
-            g.setColor(Color.yellow);
-            g.fillArc (318,301,23,23,0,80);// atas ban
-            
+            g.fillArc (285,298,60,70,0,180);
+            g.setColor(Color.red);
+            g.fillArc (318,301,23,23,0,80);
             g.setColor(Color.black); //ban
             g.fillOval(198, 313, 32,32); //ban
             g.fillOval(298, 313, 32,32); //ban

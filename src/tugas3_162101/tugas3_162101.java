@@ -3,18 +3,39 @@ import java.util.Scanner;
 
 public class tugas3_162101 
 {
+    public static void getData(String nim1[], String nama1[], String parodi1[], String umur1[])
+    {    
+        if(nama1.length < 5)
+        {			
+            throw new StringIndexOutOfBoundsException("data kurang di input data harus diinput 5 kali");
+        }
+        else
+        {
+            int a = 1;
+
+            for(int j = 0 ; j < nama1.length ; j++)
+            {
+                int c = j + a;
+                System.out.println("Data Mahasiswa ke-" + c);
+                System.out.println("NIM \t: " + nim1[j]);
+                System.out.println("NAMA \t: " + nama1[j]);
+                System.out.println("PARODI \t: " + parodi1[j]);
+                System.out.println("UMUR \t: " + umur1[j] + " TAHUN");
+                System.out.println("");
+            }
+        }
+        
+    }
+    
     public static void main(String[] args) 
     {
         Scanner input = new Scanner(System.in);
-        int a = 1;
         
-        String[] nim = new String[4];
-        String[] nama = new String[4];
-        String[] umur = new String[4];
-        String[] parodi = new String[4];
+        String[] nim = new String[5];
+        String[] nama = new String[5];
+        String[] umur = new String[5];
+        String[] parodi = new String[5];
         
-        //Character jawab = new Character('Y');
-        //Character jawaban = new Character('Y');
         char jawaban;
         boolean jawab = true;
         
@@ -44,23 +65,22 @@ public class tugas3_162101
                 parodi[i] = "parodi tidak terdaftar";
             }
             
-            System.out.print("Masih Ingin menginput data [Y/N]");
+            System.out.print("Masih Ingin menginput data [Y/N] : ");
             jawaban = input.nextLine().charAt(0);
             
             jawab = jawaban == 'y' || jawaban == 'Y' ? true : false ; 
             System.out.println("");
-        }
-        
-        for(int j = 0 ; j <= nama.length; j++)
-        {
-            int c = j + a;
-            System.out.println("Data Mahasiswa ke-" + c);
-            System.out.println("NIM \t: " + nim[j]);
-            System.out.println("NAMA \t: " + nama[j]);
-            System.out.println("PARODI \t: " + parodi[j]);
-            System.out.println("UMUR \t: " + umur[j] + " TAHUN");
-            System.out.println("");
         } 
         
+        try{
+            getData(nim, nama, parodi, umur);
+        }
+
+        catch (StringIndexOutOfBoundsException exception){
+            System.out.println("Exception: data kurang di input data harus diinput 5 kali");
+        }
+        finally{
+            System.out.println("Eksekusi program dilanjutkan ...");
+        }
     }
 }
